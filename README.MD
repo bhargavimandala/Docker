@@ -10,4 +10,4 @@ bocker build -t [docker-hub-url]/[your-username]/[image-name]:version .
 
 ### how to push image to docker hub
 
-docker push [docker-hub-url]/[your-username]/[image-name]:version .
+docker push [docker-hub-url]/[your-username]/[image-name]:version 
