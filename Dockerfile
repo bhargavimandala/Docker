@@ -20,9 +20,13 @@
 #ADD apache-tomcat-9.0.73-embed.tar.gz /tmp/
 # ADD [SOURCE] [DESTINATION]
 
-FROM almalinux
+#FROM almalinux
 #CMD ["ping", "-c5", "google.com"]
 #ENTRYPOINT [ "ping", "-c5", "google.com" ]
-CMD ["google.com"]
-ENTRYPOINT [ "ping", "-c5" ]
+#CMD ["google.com"]
+#ENTRYPOINT [ "ping", "-c5" ]
 
+FROM almalinux
+RUN adduser Bhargavi
+USER Bhargavi
+RUN touch/tmp/hellotxt
