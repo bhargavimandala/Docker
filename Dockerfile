@@ -29,4 +29,4 @@
 FROM almalinux
 RUN adduser Bhargavi
 USER Bhargavi
-RUN touch/tmp/hellotxt
+RUN touch/tmp/hello.txt
