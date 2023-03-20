@@ -31,6 +31,12 @@
 #USER Bhargavi
 #RUN touch/tmp/hello.txt
 
+#FROM almalinux
+#WORKDIR /tmp
+#RUN touch hello.txt
+
+ARG VERSION
 FROM almalinux
-WORKDIR /tmp
-RUN touch hello.txt
+ARG GREETING="HI Good Morning"
+RUN echo "$GREETING"
+RUN echo "$VERSION"
