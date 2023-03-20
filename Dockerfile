@@ -26,7 +26,11 @@
 #CMD ["google.com"]
 #ENTRYPOINT [ "ping", "-c5" ]
 
+#FROM almalinux
+#RUN adduser Bhargavi
+#USER Bhargavi
+#RUN touch/tmp/hello.txt
+
 FROM almalinux
-RUN adduser Bhargavi
-USER Bhargavi
-RUN touch/tmp/hello.txt
+WORKDIR /tmp
+RUN touch hello.txt
