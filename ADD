@@ -1,0 +1,10 @@
+#### ADD
+
+ADD is same as COPY
+It is ueful to copy files from local to container.
+but it has two extra capabilities.
+
+1.ADD can download the file directly from internet.
+2.ADD can untar /unzip the file directly into the container.
+
+

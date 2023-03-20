@@ -13,3 +13,4 @@ RUN yum install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY qi /usr/share/nginxhtml
 CMD ["nginx", "-g", "daemon off;"]
+ADD https://raw.githubusercontent.com/trussworks/terraform-aws-s3-private-bucket/main/main.tf /tmp/
